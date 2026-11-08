@@ -1,0 +1,10 @@
+{
+  "name": "Quick Settings Manager",
+  "description": "Reorder and manage Quick Settings tiles and system-row controls",
+  "uuid": "quick-settings-manager@rawr.fun",
+  "url": "https://github.com/lzcunt/gnome-shell-extension-quick-settings-manager",
+  "shell-version": [
+    "50"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.quick-settings-manager"
+}

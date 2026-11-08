@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.quick-settings-manager" path="/org/gnome/shell/extensions/quick-settings-manager/">
+    <key name="element-order" type="as">
+      <description>Order of quick settings elements</description>
+      <default>[]</default>
+    </key>
+    <key name="hidden-elements" type="as">
+      <description>List of quick settings elements to hide</description>
+      <default>[]</default>
+    </key>
+    <key name="available-elements" type="a{ss}">
+      <description>Elements currently present in the quick settings menu (id to title)</description>
+      <default>{}</default>
+    </key>
+    <key name="disabled-elements" type="as">
+      <description>Quick settings elements that are never shown (disabled)</description>
+      <default>[]</default>
+    </key>
+    <key name="element-types" type="a{ss}">
+      <description>Element kinds: id to tile, slider or other</description>
+      <default>{}</default>
+    </key>
+    <key name="user-widget-avatar-size" type="i">
+      <description>User widget profile picture size in pixels</description>
+      <range min="16" max="256"/>
+      <default>72</default>
+    </key>
+    <key name="user-widget-text-size" type="i">
+      <description>User widget name text size in pixels</description>
+      <range min="8" max="64"/>
+      <default>20</default>
+    </key>
+    <key name="user-widget-enabled" type="b">
+      <description>Whether the user widget is shown in quick settings</description>
+      <default>false</default>
+    </key>
+    <key name="system-items-order" type="as">
+      <description>Order of actions and spacers in the quick settings system row</description>
+      <default>['PowerToggle', 'FlexibleSpacer#1', 'ScreenshotItem', 'SettingsItem', 'AirplaneModeItem', 'LockItem', 'ShutdownItem']</default>
+    </key>
+    <key name="hidden-system-items" type="as">
+      <description>System row actions hidden from quick settings</description>
+      <default>['AirplaneModeItem']</default>
+    </key>
+    <key name="battery-show-percentage" type="b">
+      <description>Show the percentage in the system row battery indicator</description>
+      <default>true</default>
+    </key>
+    <key name="battery-show-logo" type="b">
+      <description>Show the battery icon in the system row</description>
+      <default>true</default>
+    </key>
+    <key name="battery-hide-above-enabled" type="b">
+      <description>Hide the percentage at or above a battery level</description>
+      <default>false</default>
+    </key>
+    <key name="battery-hide-above-threshold" type="i">
+      <description>Battery percentage at which to hide the percentage</description>
+      <range min="0" max="100"/>
+      <default>80</default>
+    </key>
+    <key name="battery-hide-plugged-enabled" type="b">
+      <description>Hide the percentage at or above a level while plugged in</description>
+      <default>false</default>
+    </key>
+    <key name="battery-hide-plugged-threshold" type="i">
+      <description>Plugged-in battery percentage at which to hide the percentage</description>
+      <range min="0" max="100"/>
+      <default>80</default>
+    </key>
+  </schema>
+</schemalist>
